@@ -17,7 +17,8 @@
       "Bash(npx wrangler pages project create:*)",
       "Bash(wrangler login:*)",
       "Bash(npm run build:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(taskkill:*)"
     ],
     "deny": [],
     "ask": []
