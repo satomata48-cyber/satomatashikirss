@@ -17,8 +17,8 @@ export const feedSources: FeedSource[] = [
 		category: 'ニュース'
 	},
 	{
-		name: '日経新聞',
-		url: 'https://www.nikkei.com/rss/main.xml',
+		name: 'NHK社会',
+		url: 'https://www.nhk.or.jp/rss/news/cat1.xml',
 		category: 'ニュース'
 	},
 	// 政治
@@ -28,46 +28,56 @@ export const feedSources: FeedSource[] = [
 		category: '政治'
 	},
 	{
-		name: 'ロイター政治',
-		url: 'https://jp.reuters.com/news/politics.rss',
+		name: 'はてな政治',
+		url: 'https://b.hatena.ne.jp/hotentry/social.rss',
 		category: '政治'
 	},
 	// 経済
 	{
-		name: '日経経済',
-		url: 'https://www.nikkei.com/rss/economy.xml',
+		name: 'NHK経済',
+		url: 'https://www.nhk.or.jp/rss/news/cat5.xml',
 		category: '経済'
 	},
 	{
-		name: 'ロイター経済',
-		url: 'https://jp.reuters.com/news/economy.rss',
+		name: '日経クロステック',
+		url: 'https://xtech.nikkei.com/rss/index.rdf',
+		category: '経済'
+	},
+	{
+		name: 'はてな経済',
+		url: 'https://b.hatena.ne.jp/hotentry/economics.rss',
 		category: '経済'
 	},
 	// 米国株
 	{
-		name: 'Yahoo!ファイナンス米国',
-		url: 'https://finance.yahoo.co.jp/rss/news/overseas',
+		name: 'Investing.com 株式ニュース',
+		url: 'https://jp.investing.com/rss/news_25.rss',
 		category: '米国株'
 	},
 	{
-		name: 'ブルームバーグ',
-		url: 'https://www.bloomberg.co.jp/feeds/sitemap_news.xml',
+		name: 'Investing.com 株式分析',
+		url: 'https://jp.investing.com/rss/stock_Stocks.rss',
 		category: '米国株'
 	},
 	{
-		name: 'ロイターマーケット',
-		url: 'https://jp.reuters.com/news/markets.rss',
+		name: 'Investing.com 指数分析',
+		url: 'https://jp.investing.com/rss/stock_Indices.rss',
 		category: '米国株'
 	},
 	// 日本株
 	{
-		name: 'Yahoo!ファイナンス日本',
-		url: 'https://finance.yahoo.co.jp/rss/news/domestic',
+		name: 'JPXマーケットニュース',
+		url: 'https://www.jpx.co.jp/rss/markets_news.xml',
 		category: '日本株'
 	},
 	{
-		name: '日経マーケット',
-		url: 'https://www.nikkei.com/rss/markets.xml',
+		name: 'JPXお知らせ',
+		url: 'https://www.jpx.co.jp/rss/jpx-news.xml',
+		category: '日本株'
+	},
+	{
+		name: 'JPX注意喚起',
+		url: 'https://www.jpx.co.jp/rss/alerts.xml',
 		category: '日本株'
 	},
 	// 仮想通貨
@@ -103,16 +113,42 @@ export const feedSources: FeedSource[] = [
 		url: 'https://qiita.com/popular-items/feed',
 		category: '開発'
 	},
-	// まとめ系
+	// 2chまとめ系
 	{
 		name: 'キニ速',
-		url: 'http://blog.livedoor.jp/kinisoku/index.rdf',
-		category: 'まとめ'
+		url: 'https://blog.livedoor.jp/kinisoku/index.rdf',
+		category: '2chまとめ'
 	},
 	{
 		name: 'IT速報',
-		url: 'http://blog.livedoor.jp/itsoku/index.rdf',
-		category: 'まとめ'
+		url: 'https://blog.livedoor.jp/itsoku/index.rdf',
+		category: '2chまとめ'
+	},
+	{
+		name: 'ハムスター速報',
+		url: 'https://hamusoku.com/index.rdf',
+		category: '2chまとめ'
+	},
+	{
+		name: '痛いニュース',
+		url: 'https://blog.livedoor.jp/dqnplus/index.rdf',
+		category: '2chまとめ'
+	},
+	// スタートアップ系
+	{
+		name: 'BRIDGE',
+		url: 'https://thebridge.jp/feed/',
+		category: 'スタートアップ'
+	},
+	{
+		name: 'CNET Japan',
+		url: 'http://feeds.japan.cnet.com/rss/cnet/all.rdf',
+		category: 'スタートアップ'
+	},
+	{
+		name: 'はてなビジネス',
+		url: 'https://b.hatena.ne.jp/hotentry/social.rss',
+		category: 'スタートアップ'
 	}
 ];
 
@@ -126,6 +162,7 @@ export const categories = [
 	'仮想通貨',
 	'テック',
 	'開発',
-	'まとめ'
+	'スタートアップ',
+	'2chまとめ'
 ] as const;
 export type Category = (typeof categories)[number];

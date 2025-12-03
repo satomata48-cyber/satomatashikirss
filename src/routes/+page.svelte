@@ -95,11 +95,11 @@
 		</div>
 
 		<!-- カテゴリタブ -->
-		<div class="flex gap-2 mb-6 overflow-x-auto pb-2">
+		<div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-2 mb-6">
 			{#each categories as category}
 				<button
 					onclick={() => (selectedCategory = category)}
-					class="px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors {selectedCategory ===
+					class="px-2 py-2 rounded-lg text-xs sm:text-sm font-medium transition-colors {selectedCategory ===
 					category
 						? 'bg-blue-500 text-white'
 						: 'bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-600'}"
