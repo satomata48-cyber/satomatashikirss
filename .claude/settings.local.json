@@ -9,7 +9,15 @@
       "Bash(cat:*)",
       "Bash(npm run dev:*)",
       "Bash(git init:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nInitial commit: RSS Reader with SvelteKit + TailwindCSS\n\n- RSS取得機能（NHK、Yahoo、日経、Gigazine、ITmedia、はてな、Zenn、Qiita、キニ速、IT速報）\n- カテゴリ分け（ニュース、テック、開発、まとめ）\n- キーワード検索\n- ダークモード切り替え\n- Cloudflare Pages対応\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git branch:*)",
+      "Bash(git remote add:*)",
+      "Bash(git push:*)",
+      "Bash(npx wrangler pages project create:*)",
+      "Bash(wrangler login:*)",
+      "Bash(npm run build:*)",
+      "Bash(git commit:*)"
     ],
     "deny": [],
     "ask": []
