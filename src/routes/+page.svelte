@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { categories, type Category } from '$lib/config/feeds';
-	import type { FeedItem } from '$lib/server/rss';
+	import type { FeedItem } from './+page.server';
 
 	let { data } = $props();
 
@@ -51,6 +51,7 @@
 
 	function formatDate(dateStr: string): string {
 		const date = new Date(dateStr);
+		if (isNaN(date.getTime())) return '';
 		return date.toLocaleDateString('ja-JP', {
 			month: 'short',
 			day: 'numeric',
@@ -69,17 +70,26 @@
 	<header class="bg-white dark:bg-gray-800 shadow-sm sticky top-0 z-10">
 		<div class="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
 			<h1 class="text-xl font-bold text-gray-900 dark:text-white">📰 RSSリーダー</h1>
-			<button
-				onclick={toggleDarkMode}
-				class="p-2 rounded-lg bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
-				aria-label="テーマ切り替え"
-			>
-				{#if darkMode}
-					<span class="text-yellow-500">☀️</span>
-				{:else}
-					<span class="text-gray-600">🌙</span>
-				{/if}
-			</button>
+			<div class="flex gap-2">
+				<a
+					href="/"
+					class="p-2 rounded-lg bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
+					aria-label="更新"
+				>
+					🔄
+				</a>
+				<button
+					onclick={toggleDarkMode}
+					class="p-2 rounded-lg bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
+					aria-label="テーマ切り替え"
+				>
+					{#if darkMode}
+						<span class="text-yellow-500">☀️</span>
+					{:else}
+						<span class="text-gray-600">🌙</span>
+					{/if}
+				</button>
+			</div>
 		</div>
 	</header>
 
@@ -122,9 +132,7 @@
 						{item.title}
 					</h2>
 					<div class="flex items-center gap-3 text-sm text-gray-500 dark:text-gray-400">
-						<span
-							class="px-2 py-0.5 bg-gray-100 dark:bg-gray-700 rounded text-xs"
-						>
+						<span class="px-2 py-0.5 bg-gray-100 dark:bg-gray-700 rounded text-xs">
 							{item.source}
 						</span>
 						<span>{formatDate(item.pubDate)}</span>

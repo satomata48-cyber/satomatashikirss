@@ -116,22 +116,32 @@ export const feedSources: FeedSource[] = [
 	// 2chまとめ系
 	{
 		name: 'キニ速',
-		url: 'https://blog.livedoor.jp/kinisoku/index.rdf',
+		url: 'http://blog.livedoor.jp/kinisoku/index.rdf',
 		category: '2chまとめ'
 	},
 	{
 		name: 'IT速報',
-		url: 'https://blog.livedoor.jp/itsoku/index.rdf',
+		url: 'http://blog.livedoor.jp/itsoku/index.rdf',
 		category: '2chまとめ'
 	},
 	{
 		name: 'ハムスター速報',
-		url: 'https://hamusoku.com/index.rdf',
+		url: 'http://hamusoku.com/index.rdf',
 		category: '2chまとめ'
 	},
 	{
 		name: '痛いニュース',
-		url: 'https://blog.livedoor.jp/dqnplus/index.rdf',
+		url: 'http://blog.livedoor.jp/dqnplus/index.rdf',
+		category: '2chまとめ'
+	},
+	{
+		name: '暇人速報',
+		url: 'http://himasoku.com/index.rdf',
+		category: '2chまとめ'
+	},
+	{
+		name: 'VIPPERな俺',
+		url: 'http://blog.livedoor.jp/news23vip/index.rdf',
 		category: '2chまとめ'
 	},
 	// スタートアップ系
@@ -142,12 +152,17 @@ export const feedSources: FeedSource[] = [
 	},
 	{
 		name: 'CNET Japan',
-		url: 'http://feeds.japan.cnet.com/rss/cnet/all.rdf',
+		url: 'https://japan.cnet.com/rss/index.rdf',
 		category: 'スタートアップ'
 	},
 	{
-		name: 'はてなビジネス',
-		url: 'https://b.hatena.ne.jp/hotentry/social.rss',
+		name: 'ITmedia ビジネス',
+		url: 'https://rss.itmedia.co.jp/rss/2.0/business.xml',
+		category: 'スタートアップ'
+	},
+	{
+		name: 'ITmedia エグゼクティブ',
+		url: 'https://rss.itmedia.co.jp/rss/2.0/executive.xml',
 		category: 'スタートアップ'
 	}
 ];

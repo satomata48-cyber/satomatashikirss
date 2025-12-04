@@ -24,6 +24,7 @@
 	},
 	"dependencies": {
 		"@sveltejs/adapter-auto": "^7.0.0",
+		"@sveltejs/adapter-static": "^3.0.10",
 		"rss-parser": "^3.13.0"
 	}
 }
