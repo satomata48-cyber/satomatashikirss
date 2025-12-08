@@ -39,6 +39,16 @@ export const feedSources: FeedSource[] = [
 		category: '経済'
 	},
 	{
+		name: 'Yahoo!経済トピックス',
+		url: 'https://news.yahoo.co.jp/rss/topics/business.xml',
+		category: '経済'
+	},
+	{
+		name: 'Yahoo!経済',
+		url: 'https://news.yahoo.co.jp/rss/categories/business.xml',
+		category: '経済'
+	},
+	{
 		name: '日経クロステック',
 		url: 'https://xtech.nikkei.com/rss/index.rdf',
 		category: '経済'
@@ -49,6 +59,11 @@ export const feedSources: FeedSource[] = [
 		category: '経済'
 	},
 	// 米国株
+	{
+		name: 'Yahoo!経済（米国株関連）',
+		url: 'https://news.yahoo.co.jp/rss/topics/business.xml',
+		category: '米国株'
+	},
 	{
 		name: 'Investing.com 株式ニュース',
 		url: 'https://jp.investing.com/rss/news_25.rss',
@@ -65,6 +80,11 @@ export const feedSources: FeedSource[] = [
 		category: '米国株'
 	},
 	// 日本株
+	{
+		name: 'Yahoo!国内',
+		url: 'https://news.yahoo.co.jp/rss/topics/domestic.xml',
+		category: '日本株'
+	},
 	{
 		name: 'JPXマーケットニュース',
 		url: 'https://www.jpx.co.jp/rss/markets_news.xml',

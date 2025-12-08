@@ -40,7 +40,10 @@
       "WebFetch(domain:dash.cloudflare.com)",
       "Bash(npx wrangler:*)",
       "WebFetch(domain:coinpost.jp)",
-      "WebFetch(domain:www.coindeskjapan.com)"
+      "WebFetch(domain:www.coindeskjapan.com)",
+      "WebFetch(domain:220b82b8.satomatashikirss.pages.dev)",
+      "WebFetch(domain:news.yahoo.co.jp)",
+      "WebFetch(domain:assets.wor.jp)"
     ],
     "deny": [],
     "ask": []
