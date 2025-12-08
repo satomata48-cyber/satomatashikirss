@@ -4,7 +4,7 @@
 
 	let { data } = $props();
 
-	let selectedCategory = $state<Category>('すべて');
+	let selectedCategory = $state<Category>('ニュース');
 	let searchQuery = $state('');
 	let darkMode = $state(false);
 
@@ -36,9 +36,7 @@
 		let items = data.items as FeedItem[];
 
 		// カテゴリフィルタ
-		if (selectedCategory !== 'すべて') {
-			items = items.filter((item) => item.category === selectedCategory);
-		}
+		items = items.filter((item) => item.category === selectedCategory);
 
 		// 検索フィルタ
 		if (searchQuery.trim()) {

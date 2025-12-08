@@ -82,8 +82,8 @@ export const feedSources: FeedSource[] = [
 	},
 	// 仮想通貨
 	{
-		name: 'CoinPost',
-		url: 'https://coinpost.jp/rss.xml',
+		name: 'CoinDesk Japan',
+		url: 'https://www.coindeskjapan.com/feed/',
 		category: '仮想通貨'
 	},
 	// テック系
@@ -168,7 +168,6 @@ export const feedSources: FeedSource[] = [
 ];
 
 export const categories = [
-	'すべて',
 	'ニュース',
 	'政治',
 	'経済',

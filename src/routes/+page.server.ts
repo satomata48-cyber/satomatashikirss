@@ -158,6 +158,21 @@ function cleanText(text: string): string {
 		.trim();
 }
 
+// タイトルの類似性をチェック（簡易版）
+function isSimilarTitle(title1: string, title2: string): boolean {
+	const normalize = (str: string) => str.toLowerCase().replace(/\s+/g, '').replace(/[「」『』【】]/g, '');
+	const t1 = normalize(title1);
+	const t2 = normalize(title2);
+
+	// 完全一致または一方が他方を含む場合は重複とみなす
+	if (t1 === t2) return true;
+	if (t1.length > 20 && t2.length > 20) {
+		if (t1.includes(t2) || t2.includes(t1)) return true;
+	}
+
+	return false;
+}
+
 export async function load() {
 	const results = await Promise.allSettled(
 		feedSources.map(source => fetchFeed(source))
@@ -173,5 +188,16 @@ export async function load() {
 	// Sort by date descending
 	items.sort((a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime());
 
-	return { items };
+	// 重複を除去（新しい記事を優先）
+	const uniqueItems: FeedItem[] = [];
+	for (const item of items) {
+		const isDuplicate = uniqueItems.some(existingItem =>
+			isSimilarTitle(item.title, existingItem.title)
+		);
+		if (!isDuplicate) {
+			uniqueItems.push(item);
+		}
+	}
+
+	return { items: uniqueItems };
 }
