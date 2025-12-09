@@ -70,11 +70,6 @@ export const feedSources: FeedSource[] = [
 		category: '米国株'
 	},
 	{
-		name: 'ダイヤモンド・ザイ',
-		url: 'https://news.yahoo.co.jp/rss/media/dzai/all.xml',
-		category: '米国株'
-	},
-	{
 		name: 'Investing.com 株式ニュース',
 		url: 'https://jp.investing.com/rss/news_25.rss',
 		category: '米国株'
@@ -93,6 +88,11 @@ export const feedSources: FeedSource[] = [
 	{
 		name: '日本取引所RSS',
 		url: 'https://www.jpx.co.jp/rss/markets_news.xml',
+		category: '日本株'
+	},
+	{
+		name: 'ダイヤモンド・ザイ',
+		url: 'https://news.yahoo.co.jp/rss/media/dzai/all.xml',
 		category: '日本株'
 	},
 	{
