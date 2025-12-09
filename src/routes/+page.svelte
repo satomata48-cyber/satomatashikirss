@@ -118,7 +118,7 @@
 		</div>
 
 		<!-- 記事一覧 -->
-		<div class="space-y-1.5 sm:space-y-2">
+		<div class="grid grid-cols-1 md:grid-cols-2 gap-1.5 sm:gap-2">
 			{#each filteredItems() as item}
 				<a
 					href={item.link}
@@ -137,7 +137,7 @@
 					</div>
 				</a>
 			{:else}
-				<div class="text-center py-12 text-gray-500 dark:text-gray-400">
+				<div class="col-span-full text-center py-12 text-gray-500 dark:text-gray-400">
 					{#if searchQuery}
 						「{searchQuery}」に一致する記事が見つかりません
 					{:else}
