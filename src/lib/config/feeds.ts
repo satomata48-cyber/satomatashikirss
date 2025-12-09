@@ -179,6 +179,22 @@ export const feedSources: FeedSource[] = [
 		name: 'ITmedia エグゼクティブ',
 		url: 'https://rss.itmedia.co.jp/rss/2.0/executive.xml',
 		category: 'スタートアップ'
+	},
+	// AI
+	{
+		name: 'Ledge.ai',
+		url: 'https://ledge.ai/feed',
+		category: 'AI'
+	},
+	{
+		name: 'AINOW',
+		url: 'https://ainow.ai/feed',
+		category: 'AI'
+	},
+	{
+		name: 'ITmedia AI+',
+		url: 'https://rss.itmedia.co.jp/rss/2.0/aiplus.xml',
+		category: 'AI'
 	}
 ];
 
@@ -189,6 +205,7 @@ export const categories = [
 	'米国株',
 	'日本株',
 	'仮想通貨',
+	'AI',
 	'テック',
 	'開発',
 	'スタートアップ',
