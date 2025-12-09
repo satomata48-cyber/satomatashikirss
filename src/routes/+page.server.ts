@@ -185,8 +185,18 @@ export async function load() {
 		}
 	}
 
-	// Sort by date descending
-	items.sort((a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime());
+	// Sort by date descending with NaN handling
+	items.sort((a, b) => {
+		const dateA = new Date(a.pubDate).getTime();
+		const dateB = new Date(b.pubDate).getTime();
+
+		// Handle invalid dates
+		if (isNaN(dateA) && isNaN(dateB)) return 0;
+		if (isNaN(dateA)) return 1; // Put invalid dates at the end
+		if (isNaN(dateB)) return -1;
+
+		return dateB - dateA;
+	});
 
 	// 重複を除去（新しい記事を優先）
 	const uniqueItems: FeedItem[] = [];
