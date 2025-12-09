@@ -69,21 +69,6 @@ export const feedSources: FeedSource[] = [
 		url: 'https://assets.wor.jp/rss/rdf/reuters/top.rdf',
 		category: '米国株'
 	},
-	{
-		name: 'Investing.com 株式ニュース',
-		url: 'https://jp.investing.com/rss/news_25.rss',
-		category: '米国株'
-	},
-	{
-		name: 'Investing.com 株式分析',
-		url: 'https://jp.investing.com/rss/stock_Stocks.rss',
-		category: '米国株'
-	},
-	{
-		name: 'Investing.com 指数分析',
-		url: 'https://jp.investing.com/rss/stock_Indices.rss',
-		category: '米国株'
-	},
 	// 日本株
 	{
 		name: '日本取引所RSS',
