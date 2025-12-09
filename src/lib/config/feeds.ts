@@ -60,7 +60,7 @@ export const feedSources: FeedSource[] = [
 	},
 	// 米国株
 	{
-		name: 'Yahoo!経済（米国株関連）',
+		name: 'Yahoo!ファイナンス / ニュース: 米国株ニュースを日本語で集約。',
 		url: 'https://news.yahoo.co.jp/rss/topics/business.xml',
 		category: '米国株'
 	},
@@ -81,12 +81,7 @@ export const feedSources: FeedSource[] = [
 	},
 	// 日本株
 	{
-		name: 'Yahoo!国内',
-		url: 'https://news.yahoo.co.jp/rss/topics/domestic.xml',
-		category: '日本株'
-	},
-	{
-		name: 'JPXマーケットニュース',
+		name: '日本取引所RSS',
 		url: 'https://www.jpx.co.jp/rss/markets_news.xml',
 		category: '日本株'
 	},
