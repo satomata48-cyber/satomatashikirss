@@ -92,8 +92,23 @@ export const feedSources: FeedSource[] = [
 	},
 	// 仮想通貨
 	{
+		name: 'CoinPost',
+		url: 'https://coinpost.jp/?feed=rss2',
+		category: '仮想通貨'
+	},
+	{
 		name: 'CoinDesk Japan',
 		url: 'https://www.coindeskjapan.com/feed/',
+		category: '仮想通貨'
+	},
+	{
+		name: 'Cointelegraph Japan',
+		url: 'https://jp.cointelegraph.com/rss',
+		category: '仮想通貨'
+	},
+	{
+		name: 'BeInCrypto Japan',
+		url: 'https://jp.beincrypto.com/feed/',
 		category: '仮想通貨'
 	},
 	{
@@ -104,11 +119,6 @@ export const feedSources: FeedSource[] = [
 	{
 		name: 'あたらしい経済',
 		url: 'https://www.neweconomy.jp/feed',
-		category: '仮想通貨'
-	},
-	{
-		name: 'はてな仮想通貨',
-		url: 'https://b.hatena.ne.jp/hotentry/it.rss',
 		category: '仮想通貨'
 	},
 	// テック系
