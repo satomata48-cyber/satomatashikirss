@@ -66,7 +66,7 @@ async function fetchFeed(source: { name: string; url: string; category: string }
 		const itemRegex = /<item[^>]*>([\s\S]*?)<\/item>/gi;
 		let match;
 
-		while ((match = itemRegex.exec(text)) !== null && items.length < 10) {
+		while ((match = itemRegex.exec(text)) !== null && items.length < 30) {
 			const itemXml = match[1];
 
 			const title = extractTag(itemXml, 'title') || 'タイトルなし';
@@ -95,7 +95,7 @@ async function fetchFeed(source: { name: string; url: string; category: string }
 		// Atom entries if no RSS items found
 		if (items.length === 0) {
 			const entryRegex = /<entry[^>]*>([\s\S]*?)<\/entry>/gi;
-			while ((match = entryRegex.exec(text)) !== null && items.length < 10) {
+			while ((match = entryRegex.exec(text)) !== null && items.length < 30) {
 				const entryXml = match[1];
 
 				const title = extractTag(entryXml, 'title') || 'タイトルなし';
