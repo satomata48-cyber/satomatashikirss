@@ -96,6 +96,21 @@ export const feedSources: FeedSource[] = [
 		url: 'https://www.coindeskjapan.com/feed/',
 		category: '仮想通貨'
 	},
+	{
+		name: 'CRYPTO TIMES',
+		url: 'https://crypto-times.jp/feed/',
+		category: '仮想通貨'
+	},
+	{
+		name: 'あたらしい経済',
+		url: 'https://www.neweconomy.jp/feed',
+		category: '仮想通貨'
+	},
+	{
+		name: 'はてな仮想通貨',
+		url: 'https://b.hatena.ne.jp/hotentry/it.rss',
+		category: '仮想通貨'
+	},
 	// テック系
 	{
 		name: 'Gigazine',

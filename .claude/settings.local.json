@@ -46,7 +46,10 @@
       "WebFetch(domain:assets.wor.jp)",
       "WebFetch(domain:openai.com)",
       "WebFetch(domain:raw.githubusercontent.com)",
-      "WebFetch(domain:www.morningstar.co.jp)"
+      "WebFetch(domain:www.morningstar.co.jp)",
+      "WebFetch(domain:cc.minkabu.jp)",
+      "WebFetch(domain:www.neweconomy.jp)",
+      "WebFetch(domain:crypto-times.jp)"
     ],
     "deny": [],
     "ask": []

@@ -124,7 +124,7 @@
 					href={item.link}
 					target="_blank"
 					rel="noopener noreferrer"
-					class="block p-2 sm:p-3 bg-white dark:bg-gray-800 rounded-md hover:bg-gray-50 dark:hover:bg-gray-750 transition-colors border-l-4 border-blue-500"
+					class="block p-2 sm:p-3 bg-white dark:bg-gray-800 rounded-md hover:bg-blue-50 dark:hover:bg-gray-700 transition-colors border-l-4 border-blue-500"
 				>
 					<h2 class="text-sm sm:text-base text-gray-900 dark:text-white font-medium mb-1 line-clamp-2">
 						{item.title}
