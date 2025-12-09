@@ -65,6 +65,16 @@ export const feedSources: FeedSource[] = [
 		category: '米国株'
 	},
 	{
+		name: 'ロイター トップニュース',
+		url: 'https://assets.wor.jp/rss/rdf/reuters/top.rdf',
+		category: '米国株'
+	},
+	{
+		name: 'ダイヤモンド・ザイ',
+		url: 'https://news.yahoo.co.jp/rss/media/dzai/all.xml',
+		category: '米国株'
+	},
+	{
 		name: 'Investing.com 株式ニュース',
 		url: 'https://jp.investing.com/rss/news_25.rss',
 		category: '米国株'
